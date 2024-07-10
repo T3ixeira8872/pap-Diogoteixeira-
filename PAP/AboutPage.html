@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Sobre o Jogo </title>
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/> <aracter encoding for the HTML document -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<style type ="text/css">
+	Body {
+		color : black;
+	}
+	
+	.wrapper {
+		background-color: #0088f8;
+		padding: 20px;
+		border-color: black;
+		border-style: groove;
+		border-width: 5px;
+	}
+  
+</style>
+<script>
+	function myFunction(){
+		var x = document.getElementById("fname");
+		x.value = x.value.toUpperCase();
+	}
+</script>
+</head>
+<body>
+<div class="wrapper">
+<table width="100%" height="50" align="center" border="0" cellspacing="5" cellpadding="5" bgcolor="#000000">
+	<tr>
+		<td align="left">
+			<table width="550" border="0" align="center" cellspacing="5" cellpadding="5">
+				<tr>
+					<td width="100" align="center"><font face="Verdana, Geneva, sens-serif"><h2><a href="#about" style="color: white;">Sobre</a></h2></font></td>
+					<td width="100" align="center"><font face="Verdana, Geneva, sens-serif"><h2><a href="#player" style="color: white;">Jogador</a></h2></font></td>
+					<td width="100" align="center"><font face="Verdana, Geneva, sens-serif"><h2><a href="#start" style="color: white;">Começar</a></h2></font></td>
+					<td width="100" align="center"><font face="Verdana, Geneva, sens-serif"><h2><a href="ExitPage.html" style="color: white;">Sair</a></h2></font></td>
+					<td width="100" align="center"><img src="cj-gta.gif" width="100%" height="70"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+<div class="wrapper">
+<h2><em><strong><a id="about"></a><font face="Verdana, Geneva, sens-serif">Sobre o Jogo. . .</font></strong></em></h2>
+<table width="100%" height="50" border ="0" cellspacing="2" cellpadding="2" bgcolor="#0088f8">
+	<tr>
+		<td align="left"><font face="Verdana, Geneva, sens-serif">The<em><strong>"Jogo simples do salto"</strong></em> envolve um personagem que pode saltar um bloco que se move em direção do personagem.⏹<br>
+			O objetivo do jogo é fazer o personagem saltar o bloco para evitar colisão.💢<br>
+		O código é escrito em: HTML, CSS, and JavaScript.📝</font>
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><font face="Verdana, Geneva, sens-serif">O jogo acompanha a pontuação, que aumenta à medida que o personagem salta o bloco com sucesso.<br>
+			Ele também guarda a pontuação mais alta do jogador e a mostra na tela de fim de jogo.</font></td>
+	</tr>
+	<tr>
+	<td align="left"><font face="Verdana, Geneva, sens-serif">Quando o utilizador clica no botão "espaço" do teclado, ele chama uma função jump() que faz o elemento do personagem saltar adicionando uma classe animada a ele, o que aciona uma animação CSS definida na folha de estilo.⌨️<br>
+		A função também define um cronômetro para remover a classe animada após 300 milissegundos, interrompendo a animação de salto.🖲</font>
+	</td>
+	</tr>
+	<tr>
+	<td align="left"><font face="Verdana, Geneva, sens-serif">O jogo também configura um intervalo que verifica a colisão entre o personagem e o bloco a cada 10 milissegundos.⏱<br>
+		Ele faz isso obtendo os valores atuais da propriedade top do elemento de caractere e da propriedade left do elemento de bloco e verificando se eles atendem a determinadas condições.🔎<br>
+		Se uma colisão for detectada, ele interrompe a animação no elemento de bloco, verifica se a pontuação atual é maior que a pontuação máxima atual e a atualiza se necessário, exibe um alerta com a pontuação final e a pontuação máxima e reinicia o jogo configurando a variável do contador para 0 e reiniciando a animação no elemento de bloco.❌<br>
+		Se nenhuma colisão for detectada, ele incrementa uma variável de contador e atualiza uma exibição de pontuação com seu valor atual.✔️</font>
+ </td>
+ </tr>
+ 	<tr>
+	<td align="left"><font face="Verdana, Geneva, sens-serif">O arquivo de índice está relacionado ao ficheiro da página Sobre e ao ficheiro da página de saída.🌐<br>
+		O relacionamento é criado por hiperlinks de palavras apropriadas 🔑.<br>
+		O ficheiro sobre o jogo contém informações básicas sobre o jogo.📋<br>
+	O ficheiro Sair é uma mensagem de adeus👋</font>
+ </td>
+ </tr>
+</table>
+</div>
+<div class="wrapper">
+<h2><b><a id="player"></a><font face="Verdana, Geneva, sens-serif">Jogador . . .</font></b></h2>
+
+<p>
+<table width="100%" height="50" border ="0" cellspacing="0" bgcolor="##0088f8">
+	<tr>
+	<td align="center">
+		<table width="100%" border ="0" cellspacing="5" >
+			<tr>
+				<td align="center"> <font face="Verdana, Geneva, sens-serif">Escreve o teu nome e clica "Enter": </font></td>
+			</tr>
+			<tr>
+				<td align="center"><input type="text" id="fname" onchange="myFunction()"></td>
+			</tr>
+		</table>
+	</td>
+	</tr>
+</table>
+</p>
+</div>
+<div class="wrapper">
+<h2><b><a id="start"></a><font face="Verdana, Geneva, sens-serif">Vamos começar! . . .</font></b></h2>
+<p align="center">
+<table width="100%" height="100" border ="0" cellspacing="5" bgcolor="#0088f8">
+	<tr>
+		<td align="center">
+		<table width="100%" border ="0" cellspacing="1" >
+			<tr>
+				<td align="center">
+				<table width="100" border="0" cellspacing="3" cellpadding="3">	
+			    <tr>
+				<td align="center">
+				<a href="index.html"><img src="clickHere.gif" width="100%" height="100"></a></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="percentLine.gif" width="100%" height="70"></td>
+	</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+</p>
+<table width="100%" height="50" border ="0" cellspacing="5"bgcolor="#000000">
+	<tr>
+	<td align="center"><em><h4><font color="white">Todos os direitos reservados por: <br>Diogo Teixeira </font></h4></em></td>
+	</tr>
+</table>
+</div>
+</body>
+</html>
